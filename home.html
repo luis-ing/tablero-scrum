@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Home</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-brand" href="#">
+        <div class="dropdown">
+          <div class="img_avatar" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img class="avatar" src="https://mui.com/static/images/avatar/2.jpg">
+          </div>
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+            <li><button class="dropdown-item" type="button">Action</button></li>
+            <li><button class="dropdown-item" type="button">Another action</button></li>
+            <li><button class="dropdown-item" type="button">Something else here</button></li>
+          </ul>
+        </div>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Create Task</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+
+    </div>
+  </nav>
+
+  <div class="container text-center pt-4">
+    <div class="row">
+      <div class="col-sm-12 col-md-12">
+        <div class="row">
+          <div class="col-sm-12 col-md-4">
+            <div class="col-color pt-2 pb-2">
+              <div class="px-3 text-start">
+                <h6 style="margin-bottom: 0;">To Do</h6>
+              </div>
+            </div>
+            <div id="toDoId" name="toDoId" class="list mt-2">
+
+              <div class="card mt-2 mb-1" id="task1" name="task1">
+                <div class="card-body">
+                  <p class="card-text-justify" style="margin-bottom: 4px;">Some quick example text to build on the card
+                    title and make up the bulk of the
+                    card's content.</p>
+                  <div class="text-start">
+                    <span class="badge text-bg-warning">Project 1</span>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <span class="badge text-bg-secondary">low</span>
+                      <span class="badge text-bg-light">6</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <div class="px-2">
+                        tb-2383
+                      </div>
+                      <div>
+                        <div class="img_avatar_small" type="button" data-bs-toggle="tooltip" data-bs-placement="top"
+                          data-bs-title="Fulanito">
+                          <img class="avatar" src="https://mui.com/static/images/avatar/2.jpg">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <div class="col-color pt-2 pb-2">
+              <div class="px-3 text-start">
+                <h6 style="margin-bottom: 0;">Doing</h6>
+              </div>
+            </div>
+            <div id="doingId" class="list mt-2">
+
+              <div class="card mt-2 mb-1" id="task2">
+                <div class="card-body">
+                  <p class="card-text-justify" style="margin-bottom: 4px;">Some quick example text to build on the card
+                    title and make up the bulk of the
+                    card's content.</p>
+                  <div class="text-start">
+                    <span class="badge text-bg-warning">Project 1</span>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <span class="badge text-bg-primary">medium</span>
+                      <span class="badge text-bg-light">6</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <div class="px-2">
+                        tb-2383
+                      </div>
+                      <div>
+                        <div class="img_avatar_small" type="button" data-bs-toggle="tooltip" data-bs-placement="top"
+                          data-bs-title="Fulanito">
+                          <img class="avatar" src="https://mui.com/static/images/avatar/2.jpg">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <div class="col-color pt-2 pb-2">
+              <div class="px-3 text-start">
+                <h6 style="margin-bottom: 0;">Done</h6>
+              </div>
+            </div>
+            <div id="doneId" class="list mt-2">
+
+              <div class="card mt-2 mb-1" id="task3">
+                <div class="card-body">
+                  <p class="card-text-justify" style="margin-bottom: 4px;">Some quick example text to build on the card
+                    title and make up the bulk of the
+                    card's content.</p>
+                  <div class="text-start">
+                    <span class="badge text-bg-success">Project 2</span>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <span class="badge text-bg-danger">Hight</span>
+                      <span class="badge text-bg-light">6</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <div class="px-2">
+                        tb-2383
+                      </div>
+                      <div>
+                        <div class="img_avatar_small" type="button" data-bs-toggle="tooltip" data-bs-placement="top"
+                          data-bs-title="Fulanito">
+                          <img class="avatar" src="https://mui.com/static/images/avatar/2.jpg">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mt-2 mb-1" id="task4">
+                <div class="card-body">
+                  <p class="card-text-justify" style="margin-bottom: 4px;">Some quick example text to build on the card
+                    title and make up the bulk of the
+                    card's content.</p>
+                  <div class="text-start">
+                    <span class="badge text-bg-success">Project 2</span>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <span class="badge text-bg-danger">Hight</span>
+                      <span class="badge text-bg-light">6</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <div class="px-2">
+                        tb-2383
+                      </div>
+                      <div>
+                        <div class="img_avatar_small" type="button" data-bs-toggle="tooltip" data-bs-placement="top"
+                          data-bs-title="Fulanito">
+                          <img class="avatar" src="https://mui.com/static/images/avatar/2.jpg">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">New Task</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form id="NewTaskForm">
+          <div class="modal-body">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Titulo</label>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-floating mb-3">
+                  <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">Project 1</option>
+                    <option value="2">Project 2</option>
+                  </select>
+                  <label for="floatingSelect">Select project</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-floating mb-3">
+                  <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">Low</option>
+                    <option value="2">Medium</option>
+                    <option value="3">Hight</option>
+                  </select>
+                  <label for="floatingSelect">Select priority</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-floating">
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                style="height: 100px"></textarea>
+              <label for="floatingTextarea2">Comments</label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Task</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form id="NewTaskForm">
+          <div class="modal-body">
+            <div class="col-md-12">
+              <div class="d-flex justify-content-start">
+                <div class="mb-3">
+                  <select class="form-select" aria-label="Default select example">
+                    <option value="1" selected>To Do</option>
+                    <option value="2">Doing</option>
+                    <option value="3">Done</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Titulo</label>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-floating mb-3">
+                  <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">Project 1</option>
+                    <option value="2">Project 2</option>
+                  </select>
+                  <label for="floatingSelect">Select project</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-floating mb-3">
+                  <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">Low</option>
+                    <option value="2">Medium</option>
+                    <option value="3">Hight</option>
+                  </select>
+                  <label for="floatingSelect">Select priority</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-floating">
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                style="height: 100px"></textarea>
+              <label for="floatingTextarea2">Comments</label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <!-- <script src=”https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js”></script> -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script> -->
+
+  <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+  <script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+    window.addEventListener('load', function () {
+      console.log('La página ha terminado de cargarse!!');
+
+      // const taskSelected = document.getElementsByClassName('.card.mt-2.mb-1');
+      let taskSelected = document.querySelectorAll(".card.mt-2.mb-1");
+      taskSelected.forEach(button => {
+        button.addEventListener("click", () => {
+          var myModal = document.getElementById('myModal');
+          var modal = bootstrap.Modal.getOrCreateInstance(myModal)
+          modal.show()
+        })
+      })
+
+      const list1 = document.getElementById('toDoId');
+      const list2 = document.getElementById('doingId');
+      const list3 = document.getElementById('doneId');
+
+      Sortable.create(list1, {
+        group: 'shared',
+        animation: 150
+      });
+      Sortable.create(list2, {
+        group: 'shared',
+        animation: 150
+      });
+      Sortable.create(list3, {
+        group: 'shared',
+        animation: 150
+      });
+
+
+
+    });
+
+    const item = document.querySelectorAll('.card.mt-2.mb-1');
+    const elementList = document.querySelectorAll('.list.mt-2');
+    const count = item.length;
+
+
+    for (var i = 0; i < count; i++) {
+      // console.log(item[i].getAttribute('id'))
+      item[i].addEventListener("dragstart", (e) => {
+        $(".list.mt-2").addClass("contorno");
+      });
+
+      item[i].addEventListener("dragend", (e) => {
+        $(".list.mt-2").removeClass("contorno");
+      });
+    }
+
+    let idTicket = "";
+    let idColum = "";
+    $('.card.mt-2.mb-1').on('drop', (e) => {
+      // console.log(e.currentTarget.id);
+      idTicket = e.currentTarget.id;
+    });
+
+    $('.list.mt-2').on('drop', (event) => {
+      // console.log(event.currentTarget.id);
+      idColum = event.currentTarget.id;
+      saveChange();
+    });
+
+    const saveChange = () => {
+      console.log("Guardar cambio ", idTicket, idColum);
+    }
+
+  </script>
+</body>
+
+</html>
